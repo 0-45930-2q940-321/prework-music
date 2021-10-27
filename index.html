@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Music</title>
+</head>
+<body>
+
+    <header>
+        <div class="top-navigation">
+            <div class="active-link"></div>
+            <button id="defaultOpen" class="tabbutton" onclick="openPage('Home', this, 'White')">HOME</button>
+            <button class="tabbutton" onclick="openPage('Country', this, '#dff4f6')">COUNTRY</button>
+            <button class="tabbutton" onclick="openPage('Pop', this, '#8ec4cc')">POP</button>
+            <button class="tabbutton" onclick="openPage('EDM', this, '#739eab')">EDM</button>
+            <button class="tabbutton" onclick="openPage('Metal', this, '#566a8a')">METAL</button>
+            <button class="tabbutton" onclick="openPage('Extra', this, '#49505a')">EXTRA</button>
+        </div>
+    </header>
+<!--Home Tab-->
+
+<div class="tabcontent" id="Home">
+
+    <h1 class="content-header">Favorite Musicians</h1>
+            <br/>
+        <section>
+            <p>I like too many genres to pick Musicians.
+                But if I had to pick one, its below.
+                Fill free to explore more indepth of why I like them via tab bars.
+                Also the Extra tab is playlist recommendations made by me!
+            </p>
+            
+        </section>
+
+    <iframe id="one" src="https://www.youtube.com/embed/o4xH_wpaSDc?t=0" onmouseover="this.src=playersrcone+'&autoplay=1'" onmouseout="this.src=playersrcone"  width="700" height="500"></iframe>
+
+</div>
+
+<!--Country Tab-->
+<div class="tabcontent text" id="Country">
+
+    <h1>Country</h1>
+
+</div>
+
+<!--Pop Tab-->
+<div class="tabcontent text" id="Pop">
+
+    <h1>Pop</h1>
+
+</div>
+<!--EDM Tab-->
+<div class="tabcontent text" id="EDM">
+
+    <h1>EMD</h1>
+
+</div>
+
+<!--Metal Tab-->
+<div class="tabcontent text" id="Metal">
+        
+    <h1>Top 3 Bands</h1>
+
+    <iframe class="genre-tab" id="one" src="https://www.youtube.com/embed/o4xH_wpaSDc?t=0" onmouseover="this.src=playersrcone+'&autoplay=1'" onmouseout="this.src=playersrcone"  width="700" height="500"></iframe>
+
+        <section>
+
+            <h2>Motionless In White</h2>
+                <h3>Bio</h3>
+                <p>
+                    Motionless in White is an American heavy metal band from Scranton, Pennsylvania. Formed in 2005, the band consists of Chris "Motionless" Cerulli (lead vocals), Ryan Sitkowski (lead guitar), Ricky "Horror" Olson (rhythm guitar), Vinny Mauro (drums), and Justin Morrow (bass). The band has stated that their band name derived from the Eighteen Visions song "Motionless and White".
+                </p>
+
+        </section>
+
+            <section class="text-space"> 
+
+                <h2>Pentakill</h2>
+                <p>
+                    Motionless in White is an American heavy metal band from Scranton, Pennsylvania. Formed in 2005, the band consists of Chris "Motionless" Cerulli (lead vocals), Ryan Sitkowski (lead guitar), Ricky "Horror" Olson (rhythm guitar), Vinny Mauro (drums), and Justin Morrow (bass). The band has stated that their band name derived from the Eighteen Visions song "Motionless and White".
+                </p>
+
+            </section>
+
+                <section class="text-space last-head">
+
+                    <h2>Pierce The Veil</h2>
+                    <p>
+                        Motionless in White is an American heavy metal band from Scranton, Pennsylvania. Formed in 2005, the band consists of Chris "Motionless" Cerulli (lead vocals), Ryan Sitkowski (lead guitar), Ricky "Horror" Olson (rhythm guitar), Vinny Mauro (drums), and Justin Morrow (bass). The band has stated that their band name derived from the Eighteen Visions song "Motionless and White".
+                    </p>
+
+                </section>
+
+</div>
+<!--Extra Tab-->
+<div class="tabcontent text" id="Extra">
+
+    <h1 class="content-header">Extra</h1>
+
+</div>
+
+
+
+
+
+
+
+
+
+<script src="./assets/js/main.js"></script>
+    
+</body>
+</html>
