@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,100 +7,136 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Music</title>
 </head>
+
 <body>
 
     <header>
         <div class="top-navigation">
             <div class="active-link"></div>
-            <button id="defaultOpen" class="tabbutton" onclick="openPage('Home', this, 'White')">HOME</button>
+            <button class="tabbutton" onclick="openPage('Home', this, 'White')">HOME</button>
             <button class="tabbutton" onclick="openPage('Country', this, '#dff4f6')">COUNTRY</button>
             <button class="tabbutton" onclick="openPage('Pop', this, '#8ec4cc')">POP</button>
             <button class="tabbutton" onclick="openPage('EDM', this, '#739eab')">EDM</button>
-            <button class="tabbutton" onclick="openPage('Metal', this, '#566a8a')">METAL</button>
+            <button id="defaultOpen" class="tabbutton" onclick="openPage('Metal', this, '#566a8a')">METAL</button>
             <button class="tabbutton" onclick="openPage('Extra', this, '#49505a')">EXTRA</button>
         </div>
     </header>
-<!--Home Tab-->
+    <!--Home Tab-->
 
-<div class="tabcontent" id="Home">
+    <div class="tabcontent" id="Home">
 
-    <h1 class="content-header">Favorite Musicians</h1>
-            <br/>
+        <h1 class="content-header">Favorite Musicians</h1>
+        <br />
         <section>
-            <p>I like too many genres to pick Musicians.
-                But if I had to pick one, its below.
-                Fill free to explore more indepth of why I like them via tab bars.
-                Also the Extra tab is playlist recommendations made by me!
+            <p>I like too many genres to pick Musicians. But if I had to pick one, its below. Fill free to explore more
+                indepth of why I like them via tab bars. Also the Extra tab is playlist recommendations made by me!
             </p>
-            
         </section>
 
-    <iframe id="one" src="https://www.youtube.com/embed/o4xH_wpaSDc?t=0" onmouseover="this.src=playersrcone+'&autoplay=1'" onmouseout="this.src=playersrcone"  width="700" height="500"></iframe>
+        <div>
+            <iframe id="one" src="https://www.youtube.com/embed/o4xH_wpaSDc?t=0"
+                onmouseover="this.src=playersrcone+'&autoplay=1'" onmouseout="this.src=playersrcone" width="700"
+                height="500"></iframe>
+        </div>
+    </div>
 
-</div>
+    <!--Country Tab-->
+    <div class="tabcontent text" id="Country">
+        <section>
+            <h1>Country</h1>
+        </section>
+    </div>
 
-<!--Country Tab-->
-<div class="tabcontent text" id="Country">
+    <!--Pop Tab-->
+    <div class="tabcontent text" id="Pop">
+        <section>
+            <h1>Pop</h1>
+        </section>
+    </div>
+    <!--EDM Tab-->
+    <div class="tabcontent text" id="EDM">
+        <section>
+            <h1>EMD</h1>
+        </section>
+    </div>
+    <!--Metal Tab-->
+    <div class="tabcontent text" id="Metal">
 
-    <h1>Country</h1>
+       
 
-</div>
+        <h1>Top 3 Bands</h1>
 
-<!--Pop Tab-->
-<div class="tabcontent text" id="Pop">
+        <section class="top-fav-song">
+            <h2>Favorite Overall Metal Song</h2>
 
-    <h1>Pop</h1>
-
-</div>
-<!--EDM Tab-->
-<div class="tabcontent text" id="EDM">
-
-    <h1>EMD</h1>
-
-</div>
-
-<!--Metal Tab-->
-<div class="tabcontent text" id="Metal">
-        
-    <h1>Top 3 Bands</h1>
-
-    <iframe class="genre-tab" id="one" src="https://www.youtube.com/embed/o4xH_wpaSDc?t=0" onmouseover="this.src=playersrcone+'&autoplay=1'" onmouseout="this.src=playersrcone"  width="700" height="500"></iframe>
+            <div class="youtube">
+                <iframe class="genre-tab" id="one" src="https://www.youtube.com/embed/o4xH_wpaSDc?t=0"
+                    onmouseover="this.src=playersrcone+'&autoplay=1'" onmouseout="this.src=playersrcone" width="700"
+                    height="500"></iframe>
+            </div>
+        </section>
 
         <section>
-
-            <h2>Motionless In White</h2>
+            <div class="text-space">
+                <h2>Motionless In White</h2>
                 <h3>Bio</h3>
                 <p>
-                    Motionless in White is an American heavy metal band from Scranton, Pennsylvania. Formed in 2005, the band consists of Chris "Motionless" Cerulli (lead vocals), Ryan Sitkowski (lead guitar), Ricky "Horror" Olson (rhythm guitar), Vinny Mauro (drums), and Justin Morrow (bass). The band has stated that their band name derived from the Eighteen Visions song "Motionless and White".
+                    Motionless in White is an American heavy metal band from Scranton, Pennsylvania. Formed in 2005, the
+                    band consists of Chris "Motionless" Cerulli (lead vocals), Ryan Sitkowski (lead guitar), Ricky
+                    "Horror" Olson (rhythm guitar), Vinny Mauro (drums), and
+                    Justin Morrow (bass). The band has stated that their band name derived from the Eighteen Visions
+                    song "Motionless and White".
                 </p>
+
+                <div class="spotify">
+                    <iframe src="https://open.spotify.com/embed/track/64Ia3a6Woy4F9sVJvCRHY8?theme=0" width="20%"
+                        height="80"></iframe>
+                </div>
+
+                <h2 class="text-space">Pentakill</h2>
+                <p>
+                    Pentakill is a virtual heavy metal band tied to the League of Legends universe. Their music is
+                    primarily composed and performed by Riot Games' in-house music team but features cameos by various
+                    renowned metal musicians.[2] Their second album, Grasp of
+                    the Undying, reached Number 1 on the iTunes metal charts in 2017.[3] Their third album III: Lost
+                    Chapter was premiered using an interactive "live" concert.
+                </p>
+                <h3>Favorite Song</h3>
+
+                <div class="spotify">
+                    <iframe src="https://open.spotify.com/embed/track/64Ia3a6Woy4F9sVJvCRHY8?theme=0" width="20%"
+                        height="80"></iframe>
+                </div>
+
+                <div class="move-last">
+                    <h2>Pierce The Veil</h2>
+                    <p>
+                        Motionless in White is an American heavy metal band from Scranton, Pennsylvania. Formed in 2005,
+                        the band consists of Chris "Motionless" Cerulli (lead vocals), Ryan Sitkowski (lead guitar),
+                        Ricky "Horror" Olson (rhythm guitar), Vinny Mauro (drums), and
+                        Justin Morrow (bass). The band has stated that their band name derived from the Eighteen Visions
+                        song "Motionless and White".
+                    </p>
+                    <h3>Favorite Song</h3>
+                </div>
+
+                <div class="spotify">
+                    <iframe src="https://open.spotify.com/embed/track/64Ia3a6Woy4F9sVJvCRHY8?theme=0" width="20%"
+                        height="80"></iframe>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    <!--Extra Tab-->
+    <div class="tabcontent text" id="Extra">
+
+        <section>
+            <h1 class="content-header">Extra</h1>
 
         </section>
 
-            <section class="text-space"> 
-
-                <h2>Pentakill</h2>
-                <p>
-                    Motionless in White is an American heavy metal band from Scranton, Pennsylvania. Formed in 2005, the band consists of Chris "Motionless" Cerulli (lead vocals), Ryan Sitkowski (lead guitar), Ricky "Horror" Olson (rhythm guitar), Vinny Mauro (drums), and Justin Morrow (bass). The band has stated that their band name derived from the Eighteen Visions song "Motionless and White".
-                </p>
-
-            </section>
-
-                <section class="text-space last-head">
-
-                    <h2>Pierce The Veil</h2>
-                    <p>
-                        Motionless in White is an American heavy metal band from Scranton, Pennsylvania. Formed in 2005, the band consists of Chris "Motionless" Cerulli (lead vocals), Ryan Sitkowski (lead guitar), Ricky "Horror" Olson (rhythm guitar), Vinny Mauro (drums), and Justin Morrow (bass). The band has stated that their band name derived from the Eighteen Visions song "Motionless and White".
-                    </p>
-
-                </section>
-
-</div>
-<!--Extra Tab-->
-<div class="tabcontent text" id="Extra">
-
-    <h1 class="content-header">Extra</h1>
-
-</div>
+    </div>
 
 
 
@@ -109,7 +146,8 @@
 
 
 
-<script src="./assets/js/main.js"></script>
-    
+    <script src="./assets/js/main.js"></script>
+
 </body>
+
 </html>

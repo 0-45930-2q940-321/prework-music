@@ -6,13 +6,13 @@ function openPage(pageName, elmnt, color) {
       tabcontent[i].style.display = "none";
     }
   
-    // remove all backgrounds of buttons and tablinks
+    // remove all backgrounds of buttons and tab contents
     tabbutton = document.getElementsByClassName("tabbutton");
     for (i = 0; i < tabbutton.length; i++) {
       tabbutton[i].style.backgroundColor = "";
     }
   
-    // show the active tab cotent
+    // show the active tab content
     document.getElementById(pageName).style.display = "block";
   
     // add specific color to the button

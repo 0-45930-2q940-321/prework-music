@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Zen+Maru+Gothic:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito+Sans:wght@300&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -11,10 +10,13 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
-body {
-   height: 100%;
-   background-color: rgb(27, 27, 27);
+html {
+    height: 1200;
+}
 
+body {
+    height: 100%;
+    background-color: rgb(27, 27, 27);
 }
 
 header {
@@ -31,7 +33,6 @@ header {
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 2);
     position: relative;
 }
-
 
 button {
     font-family: 'Montserrat', sans-serif;
@@ -79,65 +80,74 @@ button {
 
 /*GLOBAL FORMATTING ALL THE TABS (But Home)*/
 
+.top-fav-song h2 {
+    display: inline-block;
+    position: relative; left: 100px;
+}
+
 .text h1 {
-    position: relative; top: 10px;
-    padding: 0 500px 0px 500px; /* Moves the border line */
+    position: relative;
+    top: 10px;
+    padding: 0 500px 0px 500px;
+    /* Moves the border line */
     text-align: center;
     border-bottom: 3px solid black;
 }
-
 
 .text h2 {
     text-decoration: underline black;
     font-size: 40px;
     text-align: center;
-    vertical-align: middle;
-    height: 150px;
-    position: relative; top: 80px;
+    position: relative;
+    top: 80px;
     /* display: table-cell; USE THIS TO MAKE IT APPEAR RIGHT NEXT TO THE IMAGE */
 }
 
-
 .text h3 {
+    text-decoration: underline black;
     text-align: center;
-    font-size: 30px;
-    text-decoration: underline;
+    position: relative;
+    top: 80px;
 }
 
 .text p {
-    position: absolute; left: 750px;
+    border-radius: 10px;
+    margin: 0 300px 0 1000px;
+    /*Subtracted the margin to decrease the width*/
+    background-color: white;
     text-align: center;
-    margin: 0 150px 0 150px;
-    padding: 10px 50px 10px 50px;
-    display: block;
-    background: white;
-    border-radius: 25px;
+    line-height: 1.5;
+    font-weight: bolder;
+    position: relative;
+    top: 80px;
 }
 
-.text-space {
-    margin-top: 100px;
+.move-last h2 {
+    margin-right: 700px;
+    position: relative;
+    left: 700px;
 }
 
-/*CENTERING THE LAST HEADER OF EACH TAB*/
-
-.last-head h2 {
-    display: inline-block; /* Fixes the overflow issue I was having */
-    position: relative; left: 1150px;
+.move-last h3 {
+    margin-right: 700px;
+    /*Subtracts the extra space from when moving*/
+    position: relative;
+    left: 700px;
 }
 
-.last-head p {
-    margin: 0 150px 0 150px;
-    padding: 10px 50px 10px 50px;
-    display: block;
-    background: chartreuse;
-    border-radius: 25px;
+.spotify {
+    margin: 0 450px 100px 100px;
+    position: relative;
+    top: 100px;
 }
 
 /*MATCHING HOME PAGE HEADER TO MATCH ALL THE TABS*/
 
 .content-header {
-    position: relative; top: 10px;
-    padding: 0 500px 0px 500px; /* Moves the border line */
+    position: relative;
+    top: 10px;
+    padding: 0 500px 0px 500px;
+    /* Moves the border line */
     text-align: center;
     border-bottom: 3px solid black;
 }
@@ -153,11 +163,11 @@ button {
     line-height: 1.5;
     font-size: 20px;
     width: 700px;
-    
 }
 
 #Home iframe {
-/* CENTERS THE IFRAME */
+
+    /* CENTERS THE IFRAME */
     margin: 0 auto;
     display: block;
 }
@@ -166,17 +176,39 @@ button {
     display: block;
     float: left;
     clear: both;
-    position: relative; top: 80px;
+    position: relative;
+    top: 80px;
 }
 
-#Home {background-color: #f1ece6;}
-#Country {background-color: #a8e3e8;}
-#Pop {background-color: #56a7b3;}
-#EDM {background-color: #456873;}
-#Metal {background-color: #2c3646;}
-#Extra {background-color: #2e3238;}
+.spotify iframe {
+    float: right;
+}
 
+#Home {
+    background-color: #f1ece6;
+}
 
+#Country {
+    background-color: #a8e3e8;
+}
 
+#Pop {
+    background: #56a7b3 url('') center no-repeat;
+    
+}
 
+#EDM {
+    background: #456873 url('') center no-repeat;
+    background-size: 1700px 1000px
+}
+
+#Metal {
+    background: #2c3646 url('https://www.wallpaperflare.com/static/186/568/908/hands-simple-background-tooclosetotouch-person-wallpaper.jpg') center no-repeat;
+    background-size: 1700px 1000px;
+    
+}
+
+#Extra {
+    background-color: #2e3238;
+}
 
