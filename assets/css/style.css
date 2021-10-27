@@ -11,7 +11,7 @@
 }
 
 html {
-    height: 1200;
+    height: 1300;
 }
 
 body {
@@ -83,12 +83,22 @@ button {
 .top-fav-song h2 {
     display: inline-block;
     position: relative; left: 100px;
+    
+    top: 80px;
+}
+
+.top-fav-song p {
+    font-size: 23px;
+    display: inline-block;
+    position: relative; right: 870px;
+    top: 80px;
 }
 
 .text h1 {
-    position: relative;
+    background-color: white;
     top: 10px;
-    padding: 0 500px 0px 500px;
+    margin: 0 750px 0 750px;
+    border-radius: 100px;
     /* Moves the border line */
     text-align: center;
     border-bottom: 3px solid black;
@@ -99,15 +109,15 @@ button {
     font-size: 40px;
     text-align: center;
     position: relative;
-    top: 80px;
     /* display: table-cell; USE THIS TO MAKE IT APPEAR RIGHT NEXT TO THE IMAGE */
 }
 
 .text h3 {
+    font-size: 30px;
     text-decoration: underline black;
     text-align: center;
     position: relative;
-    top: 80px;
+    
 }
 
 .text p {
@@ -118,9 +128,16 @@ button {
     text-align: center;
     line-height: 1.5;
     font-weight: bolder;
-    position: relative;
-    top: 80px;
+    position: relative; 
 }
+
+.move-second-last {
+    margin-right: 700px;
+    position: relative;
+    left: 700px;
+}
+
+/*Centering the last paragraph of each tab*/
 
 .move-last h2 {
     margin-right: 700px;
@@ -135,10 +152,16 @@ button {
     left: 700px;
 }
 
+/*Moving the Spotify players*/
+
+.spotify iframe {
+    float: right;
+}
+
 .spotify {
-    margin: 0 450px 100px 100px;
+    margin: 0 350px 125px 100px;
     position: relative;
-    top: 100px;
+    top: 20px;
 }
 
 /*MATCHING HOME PAGE HEADER TO MATCH ALL THE TABS*/
@@ -175,40 +198,46 @@ button {
 .genre-tab {
     display: block;
     float: left;
-    clear: both;
     position: relative;
     top: 80px;
 }
 
-.spotify iframe {
-    float: right;
-}
-
 #Home {
-    background-color: #f1ece6;
+    background: #f1ece6 url('') center no-repeat;
+    background-size: 1700px 1200px;
 }
 
 #Country {
-    background-color: #a8e3e8;
+    background: #a8e3e8 url('') center no-repeat;
+    background-size: 1700px 1200px;
 }
 
 #Pop {
     background: #56a7b3 url('') center no-repeat;
-    
+    background-size: 1700px 1200px;
 }
 
 #EDM {
     background: #456873 url('') center no-repeat;
-    background-size: 1700px 1000px
+    background-size: 1700px 1200px
 }
 
 #Metal {
-    background: #2c3646 url('https://www.wallpaperflare.com/static/186/568/908/hands-simple-background-tooclosetotouch-person-wallpaper.jpg') center no-repeat;
-    background-size: 1700px 1000px;
-    
+    background: #2c3646 url('https://www.teahub.io/photos/full/291-2916112_light-dark-futuristic-city.jpg') center no-repeat;
+    background-size: 1900px 1200px;
+}
+
+#Metal h2 {
+    color: white;
+    text-decoration-color: white;
+}
+
+#Metal h3 {
+    color: white;
+    text-decoration-color: white;
 }
 
 #Extra {
-    background-color: #2e3238;
+    background: #2e3238 url('') center no-repeat;
 }
 

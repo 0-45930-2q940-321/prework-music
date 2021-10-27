@@ -22,14 +22,3 @@ function openPage(pageName, elmnt, color) {
 
   //Video onHover
 
-  var playersrcone;
-  var playersrctwo;
-  var playersrcthree;
-  var playersrcfour;
-  var playersrcfive;
-
-  playersrcone = document.getElementById('one').src;
-  playersrtwo = document.getElementsById('two').src;
-  playersrcthree = document.getElementById('three').src;
-  playersrcfour =  document.getElementById('four').src;
-  playersrcfive = document.getElementById('five').src;
