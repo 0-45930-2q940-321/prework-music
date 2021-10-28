@@ -13,17 +13,17 @@
     <header>
         <div class="top-navigation">
             <div class="active-link"></div>
-            <button class="tabbutton" onclick="openPage('Home', this, 'White')">HOME</button>
+            <button id="defaultOpen" class="tabbutton" onclick="openPage('Home', this, 'White')">HOME</button>
             <button class="tabbutton" onclick="openPage('Country', this, '#dff4f6')">COUNTRY</button>
             <button class="tabbutton" onclick="openPage('Pop', this, '#8ec4cc')">POP</button>
             <button class="tabbutton" onclick="openPage('EDM', this, '#739eab')">EDM</button>
-            <button id="defaultOpen" class="tabbutton" onclick="openPage('Metal', this, '#566a8a')">METAL</button>
+            <button class="tabbutton" onclick="openPage('Metal', this, '#566a8a')">METAL</button>
             <button class="tabbutton" onclick="openPage('Extra', this, '#49505a')">EXTRA</button>
         </div>
     </header>
     <!--Home Tab-->
 
-    <div class="tabcontent" id="Home">
+    <div class="tabcontent" class="home" id="Home">
 
         <h1 class="content-header">Favorite Musicians</h1>
         <br />
@@ -31,14 +31,22 @@
             <p>I like too many genres to pick Musicians. But if I had to pick one, its below. Fill free to explore more
                 indepth of why I like them via tab bars. Also the Extra tab is playlist recommendations made by me!
             </p>
+            <h2>The Midnight</h2>
+            <h3>Bio</h3>
+            <p>The Midnight is a synthwave band composed of Atlanta-based singer-songwriter Tyler Lyle and Los
+                Angeles-based
+                Danish-born producer, songwriter, and singer Tim McEwan. The band was formed as a result of Lyle and
+                McEwan meeting during a co-writing workshop in 2012.</p>
+
+            <h3>Favorite Song</h3>
         </section>
 
-        <div class="youtube">
+        <div>
             <!--Play video when hovered-->
             <script>var playersrcone;</script>
-                <iframe id="one" src="https://www.youtube.com/embed/EGcbx4txRq8?t=0"
-                    onmouseover="this.src=playersrcone+'&autoplay=1'" onmouseout="this.src=playersrcone" width="700"
-                    height="500"></iframe>
+            <iframe id="one" src="https://www.youtube.com/embed/EGcbx4txRq8?t=0"
+                onmouseover="this.src=playersrcone+'&autoplay=1'" onmouseout="this.src=playersrcone" width="700"
+                height="500"></iframe>
             <script>playersrcone = document.getElementById('one').src;</script>
         </div>
     </div>
@@ -55,9 +63,9 @@
             <div class="youtube">
                 <!--Play video when hovered-->
                 <script>var playersrctwo;</script>
-                    <iframe id="two" src="https://www.youtube.com/embed/nPWrX9PJAOs?t=0"
-                        onmouseover="this.src=playersrctwo+'&autoplay=1'" onmouseout="this.src=playersrctwo" width="700"
-                        height="500"></iframe>
+                <iframe id="two" src="https://www.youtube.com/embed/nPWrX9PJAOs?t=0"
+                    onmouseover="this.src=playersrctwo+'&autoplay=1'" onmouseout="this.src=playersrctwo" width="700"
+                    height="500"></iframe>
                 <script>playersrctwo = document.getElementById('two').src;</script>
             </div>
         </section>
@@ -73,6 +81,7 @@
                     Justin Morrow (bass). The band has stated that their band name derived from the Eighteen Visions
                     song "Motionless and White".
                 </p>
+                <h3>Favorite Song</h3>
 
                 <div class="spotify">
                     <iframe src="https://open.spotify.com/embed/track/0LcspVKJxhEQQSvVMiTPWz" width="30%"
@@ -122,22 +131,22 @@
 
         <h1>Pop</h1>
         <section class="top-fav-song tfs-pop">
-            <h2>Favorite Overall Pop Song</h2>
+            <h2 style="color: white; text-decoration-color: pink;">Favorite Overall Pop Song</h2>
             <p>Manta -by- Lexie Liu</p>
 
             <div class="youtube">
                 <!--Play video when hovered-->
                 <script>var playersrcthree;</script>
-                    <iframe id="three" src="https://youtube.com/embed/4fvUnPl5_BA?t=0"
-                        onmouseover="this.src=playersrcthree+'&autoplay=1'" onmouseout="this.src=playersrcthree" width="700"
-                        height="500"></iframe>
+                <iframe id="three" src="https://youtube.com/embed/4fvUnPl5_BA?t=0"
+                    onmouseover="this.src=playersrcthree+'&autoplay=1'" onmouseout="this.src=playersrcthree" width="700"
+                    height="500"></iframe>
                 <script>playersrcthree = document.getElementById('three').src;</script>
             </div>
         </section>
 
         <section>
             <div>
-                <h2>1. 告五人</h2>
+                <h2 style="font-weight: normal;">1. 告五人</h2>
                 <h3>Bio</h3>
                 <p>
                     Reported five people ( English : Accusefive ), Taiwan Orchestra , the current members for the male
@@ -146,13 +155,14 @@
                     showing the diverse musical aspects of the five people, the types of works cover Folk Rock , Pop
                     Rock , Synth pop , Pop , Ballad , Electro .
                 </p>
+                <h3> Favorite Song</h3>
 
                 <div class="spotify">
                     <iframe src="https://open.spotify.com/embed/track/7tgzj2IqzSgUpxUhjmcF5m" width="30%"
                         height="80"></iframe>
                 </div>
 
-                <h2>2. 陳粒</h2>
+                <h2 style="font-weight: normal;">2. 陳粒</h2>
                 <h3>Bio</h3>
                 <p>
                     Chen Li (July 26, 1990- ), born in Guiyang , Guizhou , Chinese folk song female singer, independent
@@ -196,9 +206,9 @@
             <div class="youtube">
                 <!--Play video when hovered-->
                 <script>var playersrcfour;</script>
-                    <iframe id="four" src="https://www.youtube.com/embed/YQbjisWixoU?t=0"
-                        onmouseover="this.src=playersrcfour+'&autoplay=1'" onmouseout="this.src=playersrcfour" width="700"
-                        height="500"></iframe>
+                <iframe id="four" src="https://www.youtube.com/embed/YQbjisWixoU?t=0"
+                    onmouseover="this.src=playersrcfour+'&autoplay=1'" onmouseout="this.src=playersrcfour" width="700"
+                    height="500"></iframe>
                 <script>playersrcfour = document.getElementById('four').src;</script>
             </div>
         </section>
@@ -214,6 +224,7 @@
                     Justin Morrow (bass). The band has stated that their band name derived from the Eighteen Visions
                     song "Motionless and White".
                 </p>
+                <h3>Favorite Song</h3>
 
                 <div class="spotify">
                     <iframe src="https://open.spotify.com/embed/track/7DQ5CZjAQdhgDgdnSXxJ7Z" width="30%"
@@ -267,9 +278,9 @@
             <div class="youtube">
                 <!--Play video when hovered-->
                 <script>var playersrcfive;</script>
-                    <iframe id="five" src="https://www.youtube.com/embed/o4xH_wpaSDc?t=0"
-                        onmouseover="this.src=playersrcfive+'&autoplay=1'" onmouseout="this.src=playersrcfive" width="700"
-                        height="500"></iframe>
+                <iframe id="five" src="https://www.youtube.com/embed/o4xH_wpaSDc?t=0"
+                    onmouseover="this.src=playersrcfive+'&autoplay=1'" onmouseout="this.src=playersrcfive" width="700"
+                    height="500"></iframe>
                 <script>playersrcfive = document.getElementById('five').src;</script>
             </div>
         </section>
@@ -285,6 +296,7 @@
                     Justin Morrow (bass). The band has stated that their band name derived from the Eighteen Visions
                     song "Motionless and White".
                 </p>
+                <h3>Favorite Song</h3>
 
                 <div class="spotify">
                     <iframe src="https://open.spotify.com/embed/track/64Ia3a6Woy4F9sVJvCRHY8?theme=0" width="30%"
@@ -331,39 +343,39 @@
         <div>
             <h1>Some of my playlists if you're interested.</h1>
 
-            <div style="position:relative; right:-460px;">
+            <div style="position:relative; top: 80px; right:-460px;">
                 <iframe src="https://open.spotify.com/embed/playlist/769f7LOndTZb4oUHfBIakm" frameborder="0"
                     scrolling="no" height="330" align="left">
                 </iframe>
             </div>
 
-            <div style="position:relative; right:-510px;">
+            <div style="position:relative; top: 80px; right:-510px;">
                 <iframe src="https://open.spotify.com/embed/playlist/7l4rB4Zxx2H1UnVszRfR9E" frameborder="0"
                     scrolling="no" height="330" align="left">
                 </iframe>
             </div>
 
-            <div style="position:relative; right:-560px;">
+            <div style="position:relative; top: 80px; right:-560px;">
                 <iframe src="https://open.spotify.com/embed/playlist/1tgYQSxO0D86JrshBrWVmd" frameborder="0"
                     scrolling="no" height="330" align="left">
                 </iframe>
             </div>
 
-            <div style="position:relative; top: 400px; left:-460px;">
+            <div style="position:relative; top: 500px; left: -426px;">
                 <iframe src="https://open.spotify.com/embed/playlist/4eytINB9brCSv15dD12T1G" frameborder="0"
-                    scrolling="no" height="330" align="right">
+                    scrolling="no" height="330" align="left">
                 </iframe>
             </div>
 
-            <div style="position:relative; top: 400px; left:-510px;">
+            <div style="position:relative; top: 500px; left:-386px;">
                 <iframe src="https://open.spotify.com/embed/playlist/5gYPgKAJkXoyDxkVTMS5ZS" frameborder="0"
-                    scrolling="no" height="330" align="right">
+                    scrolling="no" height="330" align="left">
                 </iframe>
             </div>
 
-            <div style="position:relative; top: 400px; left:-560px;">
-                <iframe src="https://open.spotify.com/embed/playlist/5gYPgKAJkXoyDxkVTMS5ZS" frameborder="0"
-                    scrolling="no" height="330" align="center">
+            <div style="position:relative; top: 500px; left: -336px;">
+                <iframe src="https://open.spotify.com/embed/playlist/0vSm4FAAW6iyw6GxCOIWZe" frameborder="0"
+                    scrolling="no" height="330" align="left">
                 </iframe>
             </div>
         </div>

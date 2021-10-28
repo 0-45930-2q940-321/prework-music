@@ -82,15 +82,16 @@ button {
 
 .top-fav-song h2 {
     display: inline-block;
-    position: relative; left: 100px;
-    
+    position: relative;
+    left: 100px;
     top: 80px;
 }
 
 .top-fav-song p {
     font-size: 23px;
     display: inline-block;
-    position: relative; right: 870px;
+    position: relative;
+    right: 870px;
     top: 80px;
 }
 
@@ -117,7 +118,6 @@ button {
     text-decoration: underline black;
     text-align: center;
     position: relative;
-    
 }
 
 .text p {
@@ -128,7 +128,7 @@ button {
     text-align: center;
     line-height: 1.5;
     font-weight: bolder;
-    position: relative; 
+    position: relative;
 }
 
 .move-second-last {
@@ -167,44 +167,60 @@ button {
 /*MATCHING HOME PAGE HEADER TO MATCH ALL THE TABS*/
 
 .content-header {
-    position: relative;
+    background-color: white;
     top: 10px;
-    padding: 0 500px 0px 500px;
+    margin: 0 750px 0 750px;
+    border-radius: 100px;
     /* Moves the border line */
     text-align: center;
     border-bottom: 3px solid black;
 }
 
-/*HOME PAGE CONTENT FORMAT*/
+/*HOME PAGE CONTENT AND FORMAT*/
+
+#Home {
+    text-align: center;
+    background: #f1ece6 url('https://www.desktopbackground.org/download/o/2013/08/07/619163_download-wallpapers-download-2560x1440-bubbles-kosmos-1920x1080_2560x1440_h.jpg') center no-repeat;
+}
 
 #Home p {
     border-radius: 25px;
-    text-align: center;
     background-color: white;
-    margin-left: 585px;
+    margin: 0px 0 50px 585px;
     position: relative;
     line-height: 1.5;
     font-size: 20px;
     width: 700px;
 }
 
-#Home iframe {
+#Home h2 {
+    font-size: 35px;
+    border-radius: 25px;
+    background-color: white;
+    width: 300px;
+    position: relative;
+    margin: 50px 0 50px 780px;
+}
 
+#Home h3 {
+    text-decoration: underline white;
+    color: white;
+    font-size: 30px;
+}
+
+#Home iframe {
     /* CENTERS THE IFRAME */
     margin: 0 auto;
     display: block;
 }
+
+/*Youtube video positionings*/
 
 .youtube {
     display: block;
     float: left;
     position: relative;
     top: 80px;
-}
-
-#Home {
-    background: #f1ece6 url('') center no-repeat;
-    background-size: 1900px 1200px;
 }
 
 /*Specific Edits for Country*/
@@ -231,25 +247,39 @@ button {
 /*Specific Edits for Pop*/
 
 #Pop {
-    background: #56a7b3 url('https://www.zastavki.com/pictures/1920x1080/2017New_Year_wallpapers_Bright_flashes_of_New_Year_s_fireworks_119919_23.jpg') center no-repeat;
+    background: #56a7b3 url('https://wallpapercave.com/wp/wp5134857.png') center no-repeat;
     background-size: 1900px 1200px;
 }
 
 #Pop h2 {
-    color: #56a7b3;
+    color: #1b55c0;
     text-decoration-color: #56a7b3;
 }
 
 #Pop h3 {
-    color: #56a7b3;
+    color: #1b55c0;
     text-decoration-color: #56a7b3;
 }
 
 /*Specific Edits for EDM*/
 
 #EDM {
-    background: #456873 url('') center no-repeat;
+    background: #456873 url('https://wallpapercave.com/wp/wp4589383.jpg') center no-repeat;
     background-size: 1900px 1200px
+}
+
+#EDM h2 {
+    color: snow;
+    text-decoration-color: yellow;
+}
+
+#EDM h3 {
+    color: snow;
+    text-decoration-color: yellow;
+}
+
+.tfs-edm h2 {
+    left: 145px;
 }
 
 /*Specific Edits for Metal*/
@@ -272,6 +302,5 @@ button {
 /*Specific Edits for Extra*/
 
 #Extra {
-    background: #2e3238 url('') center no-repeat;
+    background: #2e3238 url('https://www.wallpaperup.com/uploads/wallpapers/2016/06/09/980773/a3a1170249387ca3657121777aba7041.jpg') center no-repeat;
 }
-
