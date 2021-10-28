@@ -195,7 +195,7 @@ button {
     display: block;
 }
 
-.genre-tab {
+.youtube {
     display: block;
     float: left;
     position: relative;
@@ -204,23 +204,55 @@ button {
 
 #Home {
     background: #f1ece6 url('') center no-repeat;
-    background-size: 1700px 1200px;
+    background-size: 1900px 1200px;
 }
+
+/*Specific Edits for Country*/
 
 #Country {
-    background: #a8e3e8 url('') center no-repeat;
-    background-size: 1700px 1200px;
+    background: #a8e3e8 url('https://wallpaperaccess.com/full/119385.jpg') center no-repeat;
+    background-size: 1900px 1200px;
 }
 
-#Pop {
-    background: #56a7b3 url('') center no-repeat;
-    background-size: 1700px 1200px;
+#Country h2 {
+    color: black;
+    text-decoration-color: rgb(255, 76, 5);
 }
+
+#Country h3 {
+    color: black;
+    text-decoration-color: rgb(255, 76, 5);
+}
+
+.tfs-country p {
+    right: 780px;
+}
+
+/*Specific Edits for Pop*/
+
+#Pop {
+    background: #56a7b3 url('https://www.zastavki.com/pictures/1920x1080/2017New_Year_wallpapers_Bright_flashes_of_New_Year_s_fireworks_119919_23.jpg') center no-repeat;
+    background-size: 1900px 1200px;
+}
+
+#Pop h2 {
+    color: #56a7b3;
+    text-decoration-color: #56a7b3;
+}
+
+#Pop h3 {
+    color: #56a7b3;
+    text-decoration-color: #56a7b3;
+}
+
+/*Specific Edits for EDM*/
 
 #EDM {
     background: #456873 url('') center no-repeat;
-    background-size: 1700px 1200px
+    background-size: 1900px 1200px
 }
+
+/*Specific Edits for Metal*/
 
 #Metal {
     background: #2c3646 url('https://www.teahub.io/photos/full/291-2916112_light-dark-futuristic-city.jpg') center no-repeat;
@@ -236,6 +268,8 @@ button {
     color: white;
     text-decoration-color: white;
 }
+
+/*Specific Edits for Extra*/
 
 #Extra {
     background: #2e3238 url('') center no-repeat;

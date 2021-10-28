@@ -19,6 +19,3 @@ function openPage(pageName, elmnt, color) {
     elmnt.style.backgroundColor = color;
   }
   document.getElementById("defaultOpen").click();
-
-  //Video onHover
-
